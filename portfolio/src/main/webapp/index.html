@@ -8,12 +8,126 @@
   </head>
   <body>
     <div id="content">
-      <h1>My Portfolio</h1>
-      <p>This is my portfolio.</p>
+      <h1>Duy's Portfolio</h1>
+      <p>This is Duy's portfolio.</p>
+      <h2>Introduction</h2>
+      <p>
+          Hi, My name is Duy, or you can call me Escanord if you want to. I'm a student
+          at Case Western Reserve University. My current interest lies between databases and deep learning.
+      </p>
+      <img src = "images/70519168.jpeg" />
+
+      <h2>Education</h2>
+      <p>
+        <b>Bachelor of Science in Computer Science</b> - Case Western Reserve University
+      </p>
+
+      <div>
+          <ul>
+              <li>Double major in Data Science. Minor in Statistics & Mathematics.</li>
+              <li><b>GPA:</b> 4.0/4.0 - Dean’s High Honor List. </li>
+              <li><b>Undergrad Courses:</b> Data Structures & Algorithms, Software Engineering, Web Development, OS.</li>
+              <li><b>Graduate Courses:</b> Database Systems, Theoretical Statistics.</li>
+          </ul>
+      </div>
+
+      <h2>Technical Skills</h2>
+      <div>
+          <ul>
+              <li> <b>Languages:</b> Python, Java, JavaScript, C/C++, SQL, Cypher, XQuery, SPARQL</li>
+              <li> <b>Technologies:</b> Django, Flask, Node.js, React, Neo4j, DynamoDB, PosgreSQL, GCP, Git, Docker, Heroku, AWS</li>
+          </ul>
+      </div>
+
+      <h2>Experiences</h2>
+      <div>
+          <p><b>PathAI</b> - <i>Software Engineer Co-op</i></p>
+          <ul>
+              <li>Built APIs for internal&external usage using Django, and caching service for database repetitive queries.</li>
+              <li>Developed and maintained databases and data storage using PostgreSQL and S3.</li>
+          </ul>
+      </div>
+
+      <div>
+          <p><b>Database Group @ CWRU</b> - <i>Undergraduate Researcher</i></p>
+          <ul>
+              <li>Researching and implementing knowledge graph queries & fairness of graph data mining algorithms.</li>
+              <li>Developing and maintaining CS department’s databases and systems for academic information.</li>
+              <li>Initialized, leading, and developing virtual assistant helping 1000+ students with academic Q&As.</li>
+          </ul>
+      </div>
+
+      <div>
+        <p><b>Case Western Reserve University</b> - <i>Undergraduate Teaching Assistant</i></p>
+        <ul>
+            <li>Preparing assignments and exams for 300+ students in Data Structures & Data Science courses.</li>
+            <li>
+                Hosting office hours to reinforce students with coding principles, data structures knowledge (AVL tree,
+                heap, hash table), and data science techniques (data wrangling, cleaning, analysis).
+            </li>
+        </ul>
+      </div>
+
+      <div>
+          <p><b>Phenikaa Maas, Phenikaa Group</b> - <i>AI Developer Intern</i></p>
+          <ul>
+              <li>
+                Developed models to be deployed on smartphones using Tensorflow and Paddle: detecting careless
+                behaviors of public bus driver while driving, and detecting & recognizing license plate.
+              </li>
+              <li>Improved the running time by 80% and the accuracy of recognition to 99.2%.</li>
+          </ul>
+      </div>
+
+      <h2>Projects</h2>
+      <div>
+        <p><b>CWRU’s Virtual Assistant</b> - <i>Web-based application</i></p>
+        <ul>
+            <li>
+                Built a web-based virtual-assistant, for 1000+ students at peak, for courses search and suggestion, as
+                well as academic-related questions
+            </li>
+            <li>
+                Implemented the server-side with AWS Lambda, Neo4j, DynamoDB, and S3 to consistently and
+                efficiently interact with the users, while React is used to build the front-end, and Lex for NLP process
+            </li>
+            <li>Funded $5000 by Case Western Reserve University</li>
+        </ul>
+      </div>
+
+      <div>
+        <p><b>Tindee</b> - <i>Web-based application</i></p>
+        <ul>
+            <li>Developed a web-based platform connecting mentor and mentee to share expetise and support</li>
+            <li>Developed the server-side with Flask with security ensured by using two-factor authentication</li>
+            <li>PosgreSQL is used to store mentor’s information, while GCP is used to store unstructured data</li>
+        </ul>
+      </div>
+
+      <div>
+        <p><b>Tindee</b> - <i>Web-based application</i></p>
+        <ul>
+            <li>
+                Developed real time model detecting and recognizing the licensed plate of trucks using PaddlePaddle
+                with accuracy of 99.2%
+            </li>
+        </ul>
+      </div>
+
+      <h2>Awards & Honors</h2>
+        <p><b>Second runner-up</b> in Qualcomm Innovation Challenge (2021)</p>
+        <p><b>Honorable Mention</b> in Vietnam Olympiad in Informatics (2019, 2020)</p>
+        <p><b>Honorable Mention</b> in ICPC North American Championship (2021, 2022) (placed 15<sup>th</sup>/100 teams)</p>
+        <p><b>Gold Medal</b> in Regional 30/4 Computer Science Competition for Gifted Students (2019) (placed 11<sup>th</sup>/1000 participants)</p>      
+
+      <h2>Fun stuffs</h2>
       <p>Click <a href="/hello">here</a> to see content created by server code.</p>
       <p>Click here to get a random message:</p>
       <button onclick="addRandomGreeting()">Hello</button>
       <div id="greeting-container"></div>
+
+      <button onclick="addRandomQuote()">Cuba - Vietnam</button>
+      <div id="quote-container"></div>
     </div>
   </body>
 </html>
