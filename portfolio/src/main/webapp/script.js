@@ -43,3 +43,14 @@ function addRandomQuote() {
     const quoteContainer = document.getElementById('quote-container');
     quoteContainer.innerText = quote;
   }
+
+/**
+ * Adds a random lyric of Always remember us this way to the page
+ */
+async function addLyric() {
+    const responseFromServer = await fetch('/lyric')
+    const lyric = await responseFromServer.text()
+
+    const lyricContainer = document.getElementById('lyric-container')
+    lyricContainer.innerText = lyric
+}
