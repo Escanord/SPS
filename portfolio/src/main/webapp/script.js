@@ -50,7 +50,6 @@ function addRandomQuote() {
 async function addLyric() {
     const responseFromServer = await fetch('/lyric')
     const lyric = await responseFromServer.json()
-    // console.log(lyric)
     const lyricContainer = document.getElementById('lyric-container')
     lyricContainer.innerText = lyric[Math.floor(Math.random() * lyric.length)]
 }
