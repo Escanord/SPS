@@ -132,8 +132,10 @@
       <button onclick="addLyric()">Always Remember Us This Way</button>
       <div id="lyric-container"></div>
 
+      <p>Click <a href="/list-images">here</a> to see images uploaded by users.</p>
+
       <h2>Contact</h2>
-      <form action="/form-handler" method="POST">
+      <form action="/form-handler" method="POST" enctype="multipart/form-data">
         <p>Contact me:</p>
         <p>Your name:</p>
         <textarea name="form-name"></textarea>
@@ -144,7 +146,10 @@
         <p>Would you like to say anything to me:</p>
         <textarea name="form-message"></textarea>
         <br/>
-        <input type="submit" />
+        <p>Upload an image:</p>
+        <input type="file" name="image">
+        <br/><br/>
+        <button type="submit">Submit</button>
       </form>
     </div>
   </body>
